@@ -6,13 +6,15 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
     font-weight: 700;
 }
 
@@ -55,7 +57,7 @@ header {
 
 nav {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 20px 0;
 }
@@ -67,8 +69,6 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
-
-
 }
 
 nav ul li a {
@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #DED4AB;
+    color: #ded4ab;
     /* color: #FFF480; */
     /* font-weight: 800; */
 }
@@ -100,12 +100,12 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-
-
 /* Banner */
 .banner {
     height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Camada_0.png') no-repeat center center/cover;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/Camada_0.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,11 +114,9 @@ nav ul li a:hover {
     padding-top: 60px;
 }
 
-
 .banner-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-
 }
 
 .banner-content p {
@@ -164,7 +162,7 @@ nav ul li a:hover {
 /* Depoimentos */
 .testimonials-section {
     text-align: center;
-    background-color: #B0A990;
+    background-color: #b0a990;
 }
 
 .testimonials-section h2 {
@@ -265,7 +263,7 @@ nav ul li a:hover {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contact-form textarea {
@@ -295,7 +293,7 @@ footer p {
     nav {
         justify-content: space-between;
     }
-    
+
     nav ul {
         position: fixed;
         top: 80px;
@@ -310,34 +308,61 @@ footer p {
         transition: left 0.3s ease;
         z-index: 999;
     }
-    
+
     nav ul.active {
         left: 0;
     }
-    
+
     nav ul li {
         margin: 15px 0;
         width: auto;
     }
-    
+
     nav ul li a {
         font-size: 1.2rem;
         color: #252715;
     }
-    
-    .about-content, .contact-content {
+
+    .about-content,
+    .contact-content {
         flex-direction: column;
     }
-    
+
     .banner-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .banner-content p {
         font-size: 1.2rem;
     }
-    
+
     section {
         padding: 60px 0;
     }
+}
+
+/* #wpp btn div {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+
+#wpp-btn img {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+
+    right: 15px;
+    z-index: 100;
+}
+
+#wpp-btn img:hover {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    transition: 100ms;
 }
