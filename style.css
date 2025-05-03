@@ -235,7 +235,7 @@ nav ul li a:hover {
 
 .contact-content {
     display: flex;
-    gap: 50px;
+    gap: 15px;
 }
 
 .contact-info {
@@ -355,7 +355,6 @@ footer p {
     color: #fff;
     text-align: center;
     font-size: 30px;
-
     right: 15px;
     z-index: 100;
 }
@@ -365,4 +364,40 @@ footer p {
     width: 80px;
     height: 80px;
     transition: 100ms;
+}
+
+#session-types .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 100px;
+
+    h2 {
+        text-align: center;
+        color: #252715;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    img {
+        max-width: 200px;
+        fill: white;
+    }
+}
+
+.session-types-container {
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px #202030;
+    border-radius: 50px;
+    padding: 70px;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 48, 0.2);
+
+    h3 {
+        font-size: 30px;
+    }
 }
