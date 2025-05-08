@@ -235,7 +235,8 @@ nav ul li a:hover {
 
 .contact-content {
     display: flex;
-    gap: 15px;
+    gap: 150px;
+    width: 40%;
 }
 
 .contact-info {
@@ -245,6 +246,15 @@ nav ul li a:hover {
 .contact-info h3 {
     margin-bottom: 20px;
     color: #252715;
+}
+
+.contact-organize {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 .contact-info p {
