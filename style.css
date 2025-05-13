@@ -307,10 +307,10 @@ footer .container {
     a {
         text-decoration: none;
         color: white;
-        display: flex; /* Mude de flex-direction: column para flex */
-        align-items: center; /* Alinha os itens verticalmente no centro */
-        gap: 10px; /* Adiciona um espaçamento entre a imagem e o texto */
-        justify-content: center; /* Centraliza horizontalmente */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
     }
     img {
         width: 35px;
@@ -328,6 +328,9 @@ footer .container {
     /* Menu Hamburguer */
     .hamburguer {
         display: block;
+        .line {
+            background-color: white;
+        }
     }
 
     nav {
@@ -380,12 +383,6 @@ footer .container {
         padding: 60px 0;
     }
 }
-
-/* #wpp btn div {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-} */
 
 #wpp-btn img {
     position: fixed;
