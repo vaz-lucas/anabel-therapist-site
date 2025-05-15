@@ -105,7 +105,7 @@ nav ul li a:hover {
     height: 90vh;
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/Camada_0.png") no-repeat center center/cover;
+        url("images/Camada_0.jpeg") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
