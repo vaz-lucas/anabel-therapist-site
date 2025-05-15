@@ -55,11 +55,11 @@ header {
     z-index: 1000;
 }
 
-nav {
+#navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 nav ul {
@@ -98,20 +98,6 @@ nav ul li a:hover {
     background-color: #141212;
     margin: 5px 0;
     transition: all 0.3s ease;
-}
-
-/* Banner */
-.banner {
-    height: 90vh;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/Camada_0.jpeg") no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding-top: 60px;
 }
 
 .banner-content h1 {
@@ -422,6 +408,8 @@ footer .container {
     }
 }
 
+/* Tipos de sessões */
+
 .session-types-container {
     position: relative;
     min-height: 200px;
@@ -435,6 +423,7 @@ footer .container {
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 48, 0.2);
     transition: all 0.3s ease;
     cursor: pointer;
+    max-width: 530px;
 
     h3 {
         font-size: 30px;

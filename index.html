@@ -11,10 +11,24 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
             rel="stylesheet"
         />
+
+        <style>
+            .banner {
+                height: 90vh;
+                background:
+                    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url("images/Camada_0.jpeg") no-repeat center center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="navbar">
                 <div class="hamburguer">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -32,6 +46,7 @@
 
         <section id="home" class="banner">
             <div class="banner-image"></div>
+
             <div class="banner-content">
                 <h1>Psicanalista Anabel Vaz</h1>
                 <p>Atendimentos no Rio de Janeiro, Niterói e Online</p>
