@@ -309,13 +309,26 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    #aboutVideo {
+        width: 400px;
+        height: 600px;
+    }
+}
+
 /* Complaints */
 
 #complaints {
     margin: 60px 40px;
     padding: 20px 0;
+    display: flex;
     text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     color: var(--verdeEscuro);
+    flex-direction: column;
+    /* max-width: 1200px; */
 
     h2 {
         padding-bottom: 30px;
@@ -333,7 +346,7 @@ nav ul li a:hover {
 }
 
 .theComplaint {
-    width: 500px;
+    max-width: 500px;
     background-color: var(--marromClaro);
     border-radius: 15px;
     padding: 15px;
@@ -344,8 +357,20 @@ nav ul li a:hover {
     margin: 30px 40px;
     border: 5px solid var(--verdeMusgo);
     border-radius: 15px;
+    max-width: 1000px;
+
     a {
         margin-top: 15px;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .conclusionComplaint {
+        margin: 15px 0;
+        padding: 40px 13px;
     }
 }
 
@@ -353,6 +378,9 @@ nav ul li a:hover {
 .testimonials-section {
     text-align: center;
     background-color: #b0a990;
+    .container {
+        padding: 20px 20px;
+    }
 }
 
 .testimonials-section h2 {
@@ -399,8 +427,8 @@ nav ul li a:hover {
 }
 
 .nav-dot {
-    width: 12px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 1px solid #566237;
     background: transparent;
@@ -413,7 +441,16 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .testimonials-container {
-        min-height: 200px;
+        min-height: 100px;
+    }
+
+    .nav-dot {
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+    }
+    .testimonial-nav {
+        gap: 50px;
     }
 }
 
