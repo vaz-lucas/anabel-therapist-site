@@ -14,6 +14,7 @@
 }
 
 .firstPart {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +97,10 @@
     transform: translateY(-50%) translateX(100%);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
+    .firstPart {
+        padding: 600px 0;
+    }
     .firstPart .hero {
         grid-template-rows: 6fr 1fr 6fr;
     }
@@ -107,6 +111,13 @@
         grid-area: 2 / 1 / 4 / 4;
     }
 }
+
+/* @media (max-width: 768px) {
+    .left::before,
+    .right::before {
+        display: none;
+    }
+} */
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -123,10 +134,11 @@ h3 {
 }
 
 .container {
-    width: 85%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    overflow: hidden;
 }
 
 .btn {
@@ -147,7 +159,7 @@ h3 {
 }
 
 section {
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 /* Header */
@@ -204,35 +216,68 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-.banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    max-width: 47%;
-    img {
-        max-width: 100%;
+/* Benefícios da terapia*/
+
+#benefits-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    h2 {
+        color: var(--verdeEscuro);
+    }
+    h3 {
+        color: var(--verdeMusgo);
+    }
+    span {
+        color: var(--verdeClaro);
     }
 }
 
-#firstPic {
-    width: 550px;
+.benefits-title {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-.banner-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+.benefits-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 100%;
 }
 
-.banner-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+.theBenefit {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 5px solid var(--verdeClaro);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    img {
+        width: 12px;
+        height: 12px;
+    }
 }
 
-/* Sobre Mim */
+@media (max-width: 768px) {
+    .benefits-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .theBenefit {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* About Me */
 .about-section {
-    background-color: #e5e5e5;
+    background-color: var(--verdeClaro);
+    padding: 50px 0;
 }
 
 .about-content {
@@ -419,8 +464,9 @@ footer .container {
         justify-content: center;
     }
     img {
+        max-width: 100%;
         width: 35px;
-        height: 35px;
+        height: auto;
         padding: 5px;
     }
     p {
