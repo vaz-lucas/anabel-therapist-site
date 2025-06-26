@@ -112,6 +112,15 @@
     }
 }
 
+@media screen and (min-width: 1900px) {
+    .firstPart {
+        max-height: 700px;
+    }
+    .firstPart .hero {
+        max-width: 1300px;
+    }
+}
+
 /* @media (max-width: 768px) {
     .left::before,
     .right::before {
@@ -215,9 +224,12 @@ nav ul li a:hover {
 /* Benefícios da terapia*/
 
 #benefits-section {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding-bottom: 150px;
+
+    width: 100vw;
+    height: 100vh;
     h2 {
         color: var(--verdeEscuro);
     }
@@ -239,14 +251,16 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    width: 100%;
     max-width: 100%;
+    position: relative;
 }
 
 .theBenefit {
-    flex: 1;
     min-width: 250px;
     max-width: 300px;
+    /* position: absolute; */
+    /* inset: 0; */
+    opacity: 0;
     padding: 20px;
     background-color: #f8f8f8;
     border: 5px solid var(--verdeClaro);
@@ -255,6 +269,31 @@ nav ul li a:hover {
     img {
         width: 12px;
         height: 12px;
+    }
+}
+
+.theBenefit[data-active-benefit] {
+    opacity: 1;
+    position: absolute;
+}
+
+.theBenefit[data-semiactive-benefit] {
+    opacity: 0.5;
+}
+
+.carouselButton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 30px;
+    height: 50px;
+    span {
+        width: 35px;
+        font-size: 35px;
     }
 }
 
@@ -452,6 +491,79 @@ nav ul li a:hover {
     .testimonial-nav {
         gap: 50px;
     }
+}
+
+/* FAQ */
+
+#FAQSection {
+    padding: 4em 2em;
+
+    h2 {
+        text-align: center;
+        margin: 1em;
+    }
+}
+
+#theFAQ {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#theFAQ li {
+    background-color: var(--cinza);
+    border-bottom: 1px solid var(--verdeClaro);
+    border-radius: 0 15px 15px 0px;
+    border-right: 3px solid var(--verdeClaro);
+}
+
+#theFAQ li:first-child {
+    border-top: 1px solid var(--verdeClaro);
+}
+
+.question {
+    padding: 1em 0;
+    border-left: 3px solid var(--verdeClaro);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.question:hover,
+.question:hover .arrow {
+    border-left-color: #39304a;
+}
+
+.arrow {
+    display: inline-block;
+    margin: 0 0.5em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid var(--verdeClaro);
+    border-bottom: 6px solid transparent;
+    transition: 0.3s;
+}
+
+#theFAQ p {
+    text-align: left;
+    line-height: 25px;
+}
+
+.answer {
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em;
+    transition: 0.3s;
+    border-left: 3px solid var(--verdeClaro);
+}
+
+.answer-opened {
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+}
+
+.arrow-rotated {
+    transform: rotate(90deg);
 }
 
 /* Contato */
@@ -677,75 +789,4 @@ footer .container {
 #session-types a {
     text-decoration: none;
     color: #252715;
-}
-
-/* FAQ */
-
-#FAQSection {
-    padding: 4em 2em;
-
-    h2 {
-        text-align: center;
-        margin: 1em;
-    }
-}
-
-#theFAQ {
-    list-style: none;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-#theFAQ li {
-    background-color: var(--verdeClaro);
-    border-bottom: 1px solid var(--verdeEscuro);
-    border-radius: 0 15px 15px 0px;
-}
-
-#theFAQ li:first-child {
-    border-top: 1px solid var(--verdeEscuro);
-}
-
-.question {
-    padding: 1em 0;
-    border-left: 5px solid var(--verdeEscuro);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.question:hover,
-.question:hover .arrow {
-    border-left-color: saddlebrown;
-}
-
-.arrow {
-    display: inline-block;
-    margin: 0 0.5em;
-    width: 0;
-    height: 0;
-    border-top: 6px solid transparent;
-    border-left: 10px solid var(--verdeEscuro);
-    border-bottom: 6px solid transparent;
-    transition: 0.3s;
-}
-
-#theFAQ p {
-    text-align: left;
-    line-height: 25px;
-}
-
-.answer {
-    overflow: hidden;
-    height: 0;
-    padding: 0 1em 0 3.3em;
-    transition: 0.3s;
-}
-
-.answer-opened {
-    padding: 1em 1em 2em 3.3em;
-    height: initial;
-}
-
-.arrow-rotated {
-    transform: rotate(90deg);
 }
