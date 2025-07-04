@@ -23,6 +23,7 @@
         <title>Psicanálise - Atendimentos no Rio, Niterói e Online</title>
         <link rel="icon" href="images/icons8-therapy-64.png" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./component/carousel.css">
 
         <style>
             .banner {
@@ -56,7 +57,10 @@
             ></iframe
         ></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
+
         <header>
+            <!-- Menu Navbar -->
             <nav id="navbar">
                 <div class="hamburguer">
                     <div class="line"></div>
@@ -71,10 +75,11 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
+            <!-- Fim do Menu Navbar -->
         </header>
         <div class="firstPart">
             <section class="hero">
-                <div class="left">
+                <div class="left-banner">
                     <h1>
                         Psicanalista <br />
                         <span>Anabel Vaz</span>
@@ -93,7 +98,7 @@
                         >Fale comigo</a
                     >
                 </div>
-                <div class="right">
+                <div class="right-banner">
                     <img src="images/profile-rosto.webp" alt="" />
                 </div>
             </section>
@@ -111,15 +116,23 @@
         <!-- fim do Botão do wpp flutuante -->
 
         <!-- Área de Benefícios da Terapia -->
+        <carousel-wrapper>
+            <carousel-item>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic praesentium asperiores ullam quos tempora repellendus illo, odit, cum nihil nemo impedit nulla maxime eius modi, deserunt excepturi magnam ratione. </carousel-item>
+            <carousel-item>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic praesentium asperiores ullam quos tempora repellendus illo, odit, cum nihil nemo impedit nulla maxime eius modi, deserunt excepturi magnam ratione. </carousel-item>
+            <carousel-item>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic praesentium asperiores ullam quos tempora repellendus illo, odit, cum nihil nemo impedit nulla maxime eius modi, deserunt excepturi magnam ratione. </carousel-item>
+            <carousel-item>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic praesentium asperiores ullam quos tempora repellendus illo, odit, cum nihil nemo impedit nulla maxime eius modi, deserunt excepturi magnam ratione. </carousel-item>
+            <carousel-item>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic praesentium asperiores ullam quos tempora repellendus illo, odit, cum nihil nemo impedit nulla maxime eius modi, deserunt excepturi magnam ratione. </carousel-item>
+        </carousel-wrapper>
 
         <section id="benefits-section" class="container">
             <div class="benefits-title container">
                 <h2>Como a terapia <span>pode melhorar</span> a sua vida:</h2>
             </div>
+
             <div class="benefits-content">
                 <a class="carouselButton prev"><span>&#11164;</span></a>
 
-                <div class="theBenefit" data-active-benefit>
+                <div class="theBenefit" >
                     <h3>Se entender melhor</h3>
                     <p>
                         <img src="images/seta.svg" alt="" />
@@ -138,7 +151,7 @@
                         emoções que antes pareciam confusas
                     </p>
                 </div>
-                <div class="theBenefit" data-semiactive-benefit>
+                <div class="theBenefit" >
                     <h3>Recuperar o poder de escolha</h3>
                     <p>
                         <img src="images/seta.svg" alt="" /> Tomar decisões sem
@@ -207,6 +220,48 @@
             </div>
         </section>
 
+        <section class="carousel-section">
+        <h3 class="carousel-title">OUR TEAM</h3>
+
+        <div class="carousel-container">
+	<button class="nav-arrow left">‹</button>
+	<div class="carousel-track">
+		<div class="card" data-index="0">
+			<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 1">
+		</div>
+		<div class="card" data-index="1">
+			<img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 2">
+		</div>
+		<div class="card" data-index="2">
+			<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="Team Member 3">
+		</div>
+		<div class="card" data-index="3">
+			<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmVzc2lvbmFsJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="Team Member 4">
+		</div>
+		<div class="card" data-index="4">
+			<img src="https://images.unsplash.com/photo-1655249481446-25d575f1c054?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHByb2Zlc3Npb25hbCUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Team Member 5">
+		</div>
+		<div class="card" data-index="5">
+			<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 6">
+		</div>
+	</div>
+	<button class="nav-arrow right">›</button>
+        </div>
+
+        <div class="member-info">
+	<h2 class="member-name">David Kim</h2>
+	<p class="member-role">Founder</p>
+        </div>
+
+        <div class="dots">
+	<div class="dot active" data-index="0"></div>
+	<div class="dot" data-index="1"></div>
+	<div class="dot" data-index="2"></div>
+	<div class="dot" data-index="3"></div>
+	<div class="dot" data-index="4"></div>
+	<div class="dot" data-index="5"></div>
+        </div>
+</section>
         <section id="about" class="about-section">
             <div class="container">
                 <div class="about-content">
@@ -568,5 +623,7 @@
         </footer>
 
         <script src="script.js"></script>
+
+
     </body>
 </html>

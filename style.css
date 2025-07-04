@@ -34,7 +34,7 @@
 }
 
 /* LEFT PART */
-.left {
+.left-banner {
     grid-area: 1 / 1 / 3 / 3;
     border: 10px solid var(--verdeMusgo);
     border-radius: 15px;
@@ -42,17 +42,17 @@
     background-color: var(--cinza);
     position: relative;
 }
-.left h1 {
+.left-banner h1 {
     font-weight: 700;
     white-space: nowrap;
     text-transform: uppercase;
 }
-.left h1 span {
+.left-banner h1 span {
     color: var(--verdeMusgo);
     font-size: 3rem;
     text-transform: initial;
 }
-.left blockquote {
+.left-banner blockquote {
     margin-top: 25px;
     margin-bottom: 50px;
     font-size: 16px;
@@ -64,7 +64,7 @@
 } */
 
 /* RIGHT PART */
-.right {
+.right-banner {
     grid-area: 2 / 2 / 4 / 4;
     border: 10px solid var(--verdeMusgo);
     border-radius: 15px;
@@ -72,15 +72,15 @@
     position: relative;
 }
 
-.right img {
+.right-banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 /* LEFT AND RIGHT BANDS */
-.left::before,
-.right::before {
+.left-banner::before,
+.right-banner::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -88,11 +88,11 @@
     width: 50vw;
     background: var(--verdeMusgo);
 }
-.left::before {
+.left-banner::before {
     left: 0;
     transform: translateY(-50%) translateX(-100%);
 }
-.right::before {
+.right-banner::before {
     right: 0;
     transform: translateY(-50%) translateX(100%);
 }
@@ -104,10 +104,10 @@
     .firstPart .hero {
         grid-template-rows: 6fr 1fr 6fr;
     }
-    .left {
+    .left-banner {
         grid-area: 1 / 1 / 3 / 4;
     }
-    .right {
+    .right-banner {
         grid-area: 2 / 1 / 4 / 4;
     }
 }
@@ -122,8 +122,8 @@
 }
 
 /* @media (max-width: 768px) {
-    .left::before,
-    .right::before {
+    .left-banner::before,
+    .right-banner::before {
         display: none;
     }
 } */
@@ -248,7 +248,8 @@ nav ul li a:hover {
 
 .benefits-content {
     display: flex;
-    flex-wrap: wrap;
+    overflow: auto;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 30px;
     max-width: 100%;
@@ -260,7 +261,7 @@ nav ul li a:hover {
     max-width: 300px;
     /* position: absolute; */
     /* inset: 0; */
-    opacity: 0;
+    opacity: 0.3;
     padding: 20px;
     background-color: #f8f8f8;
     border: 5px solid var(--verdeClaro);
@@ -281,7 +282,7 @@ nav ul li a:hover {
     opacity: 0.5;
 }
 
-.carouselButton {
+/* .carouselButton {
     background: none;
     color: inherit;
     border: none;
@@ -289,13 +290,23 @@ nav ul li a:hover {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    position: absolute;
     width: 30px;
     height: 50px;
     span {
         width: 35px;
         font-size: 35px;
     }
-}
+
+    &.prev {
+        left: 0;
+        top: 50%;
+    }
+    &.next {
+        right: 0;
+        top: 50%;
+    }
+} */
 
 @media (max-width: 768px) {
     .benefits-content {
