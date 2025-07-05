@@ -261,7 +261,6 @@ nav ul li a:hover {
     max-width: 300px;
     /* position: absolute; */
     /* inset: 0; */
-    opacity: 0.3;
     padding: 20px;
     background-color: #f8f8f8;
     border: 5px solid var(--verdeClaro);

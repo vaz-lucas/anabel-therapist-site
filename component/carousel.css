@@ -5,29 +5,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background-color: #f5f5f5;
+    /* text-align: center; */
+    background-color: var(--cinza);
     overflow: hidden;
+    h2,
+    h3 {
+        text-align: center;
+    }
 }
 
 .carousel-title {
-    font-size: 7.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
     letter-spacing: -0.02em;
     justify-content: center;
     text-align: center;
     position: relative;
 
-    font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
-    background: linear-gradient(
-        to bottom,
-        rgb(8 42 123 / 35%) 30%,
-        rgb(255 255 255 / 0%) 76%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    span {
+        color: var(--verdeClaro);
+    }
 }
 
 .carousel-container {
@@ -51,27 +48,58 @@
 }
 
 .card {
+    min-width: 250px;
+    max-width: 300px;
     position: absolute;
-    width: 280px;
-    height: 380px;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    cursor: pointer;
+
+    /* inset: 0; */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 5px solid var(--verdeClaro);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* width: 100%;
+    height: 100%; */
+
+    width: 12px;
+    height: 12px;
+
     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.cardTitle {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    img {
+        margin-bot: 10px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
 .card.center {
+    font-size: 1.2em;
+    max-width: 400px;
+    height: 350px;
     z-index: 10;
-    transform: scale(1.1) translateZ(0);
+    .carouselPs {
+        align-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-top: 15px;
+
+        p {
+            padding-top: 10px;
+        }
+    }
+    /* transform: scale(1.1) translateZ(0); */
 }
 
 .card.center img {
@@ -230,8 +258,16 @@
     }
 
     .card {
-        width: 200px;
-        height: 280px;
+        min-width: 250px;
+    }
+    .card.center {
+        max-width: 350px;
+        height: 360px;
+    }
+
+    .dot {
+        width: 30px;
+        height: 30px;
     }
 
     .card.left-2 {
