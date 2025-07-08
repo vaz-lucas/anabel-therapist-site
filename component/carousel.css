@@ -31,7 +31,7 @@
 .carousel-container {
     width: 100%;
     max-width: 1200px;
-    height: 400px;
+    height: 550px;
     /* position: relative; */
     perspective: 1000px;
     margin-top: 10px;
@@ -50,7 +50,7 @@
 
 .card {
     min-width: 250px;
-    max-width: 300px;
+    max-width: 350px;
     position: absolute;
 
     /* inset: 0; */
@@ -89,7 +89,7 @@
 .card.center {
     font-size: 1.2em;
     max-width: 400px;
-    height: 365px;
+    height: 400px;
     z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     .carouselPs {
