@@ -1,5 +1,5 @@
 .carousel-section {
-    min-height: 100vh;
+    min-height: 50vh;
     /* min-width: 100vw; */
     display: flex;
     flex-direction: column;
@@ -8,6 +8,7 @@
     /* text-align: center; */
     background-color: var(--cinza);
     overflow: hidden;
+    padding-bottom: 100px;
     h2,
     h3 {
         text-align: center;
@@ -30,10 +31,10 @@
 .carousel-container {
     width: 100%;
     max-width: 1200px;
-    height: 450px;
+    height: 400px;
     /* position: relative; */
     perspective: 1000px;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .carousel-track {
@@ -55,7 +56,8 @@
     /* inset: 0; */
     padding: 20px;
     background-color: #f8f8f8;
-    border: 5px solid var(--verdeClaro);
+    border-left: 5px solid var(--verdeMusgo);
+    border-right: 5px solid var(--verdeMusgo);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -87,8 +89,9 @@
 .card.center {
     font-size: 1.2em;
     max-width: 400px;
-    height: 350px;
+    height: 365px;
     z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     .carouselPs {
         align-content: center;
         align-items: center;
@@ -206,13 +209,15 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: rgba(8, 42, 123, 0.2);
+    background: var(--marromClaro);
+    opacity: 0.3;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .dot.active {
-    background: rgb(8, 42, 123);
+    background: var(--marromClaro);
+    opacity: 1;
     transform: scale(1.2);
 }
 
@@ -220,7 +225,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(8, 42, 123, 0.6);
+    background: var(--marromClaro);
     color: white;
     width: 40px;
     height: 40px;
@@ -253,6 +258,9 @@
 }
 
 @media (max-width: 768px) {
+    .nav-arrow {
+        top: 105%;
+    }
     .about-title {
         font-size: 4.5rem;
     }
@@ -263,6 +271,7 @@
     .card.center {
         max-width: 350px;
         height: 360px;
+        font-size: 1.05em;
     }
 
     .dot {

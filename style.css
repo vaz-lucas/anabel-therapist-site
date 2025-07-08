@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 :root {
     --cinza: #e5e5e5;
     --verdeEscuro: #252715;
@@ -342,10 +346,12 @@ nav ul li a:hover {
     margin-bottom: 30px;
     color: #252715;
     text-align: center;
+    font-size: 2em;
 }
 
 .about-text p {
     margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
 .about-image {
@@ -377,15 +383,34 @@ nav ul li a:hover {
     justify-content: center;
     color: var(--verdeEscuro);
     flex-direction: column;
-    /* max-width: 1200px; */
+    /* max-width: 1900px; */
 
     h2 {
-        padding-bottom: 30px;
+        font-size: 2em;
+        padding: 60px 0;
     }
     h3 {
         padding-bottom: 15px;
+        font-size: 1.3em;
+    }
+    span {
+        color: var(--verdeClaro);
     }
 }
+
+/* .complaintsTitle {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    img {
+        margin-bot: 10px;
+        width: 50px;
+        height: 50px;
+    }
+} */
 
 .complaintsGroup {
     display: flex;
@@ -396,17 +421,30 @@ nav ul li a:hover {
 
 .theComplaint {
     max-width: 500px;
-    background-color: var(--marromClaro);
+    background-color: var(--cinza);
+    border-left: 5px solid var(--verdeMusgo);
+    border-bottom: 5px solid var(--verdeMusgo);
     border-radius: 15px;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    p {
+        padding-bottom: 15px;
+    }
 }
 
 .conclusionComplaint {
     padding: 40px 20px;
     margin: 30px 40px;
-    border: 5px solid var(--verdeMusgo);
+    border-left: 5px solid var(--verdeMusgo);
+    border-bottom: 5px solid var(--verdeMusgo);
     border-radius: 15px;
     max-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     a {
         margin-top: 15px;
@@ -435,6 +473,7 @@ nav ul li a:hover {
 .testimonials-section h2 {
     color: #252715;
     margin-bottom: 50px;
+    font-size: 2em;
 }
 
 .testimonials-container {
@@ -532,7 +571,7 @@ nav ul li a:hover {
 }
 
 .question {
-    padding: 1em 0;
+    padding: 1em 1em;
     border-left: 3px solid var(--verdeClaro);
     cursor: pointer;
     transition: 0.3s;
@@ -579,12 +618,17 @@ nav ul li a:hover {
 /* Contato */
 .contact-section {
     background-color: #e5e5e5;
+    margin-bottom: 100px;
 }
 
 .contact-section h2 {
     text-align: center;
     color: #252715;
     margin-bottom: 50px;
+    font-size: 2em;
+    span {
+        border-bottom: 2px solid var(--verdeMusgo);
+    }
 }
 
 .contact-content {
@@ -595,16 +639,24 @@ nav ul li a:hover {
 
 .contact-info {
     flex: 1;
+    border-left: 5px solid var(--verdeMusgo);
+    padding-left: 10px;
+    p {
+        font-size: 1.2em;
+    }
 }
 
 .contact-info h3 {
     margin-bottom: 20px;
     color: #252715;
+    font-size: 1.5em;
 }
 
 .contact-organize {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
+
     align-items: center;
     width: 100%;
 }
@@ -778,25 +830,39 @@ footer .container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid 2px #202030;
+    border: solid 3px var(--verdeMusgo);
     border-radius: 50px;
     padding: 7vmax;
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 48, 0.2);
     transition: all 0.3s ease;
     cursor: pointer;
     max-width: 530px;
+    max-height: 600px;
 
     h3 {
         font-size: 30px;
+        color: var(--verdeEscuro);
     }
 
     &:hover {
         transform: translateY(-3px);
         box-shadow: 15px 15px 5px 2px rgba(32, 32, 48, 0.3);
         background-color: rgba(86, 98, 55, 0.1);
+        h3,
+        p {
+            color: var(--verdeMusgo);
+        }
     }
 }
-#session-types a {
-    text-decoration: none;
-    color: #252715;
+#session-types {
+    margin: 80px 0;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: #252715;
+    }
 }
