@@ -21,19 +21,22 @@
         </script>
         <!-- End Google Tag Manager -->
         <title>Psicanálise - Atendimentos no Rio, Niterói e Online</title>
+        <link rel="icon" href="images/icons8-therapy-64.png" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./component/carousel.css">
 
         <style>
             .banner {
                 height: 90vh;
-                background:
+                /* background:
                     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                    url("images/Camada_01.webp") no-repeat center center/cover;
+                    url("images/Camada_01.webp") no-repeat center center/cover; */
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 color: white;
+                background-color: #b0a990;
             }
             @media (max-width: 768px) {
                 background:
@@ -54,7 +57,10 @@
             ></iframe
         ></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
+
         <header>
+            <!-- Menu Navbar -->
             <nav id="navbar">
                 <div class="hamburguer">
                     <div class="line"></div>
@@ -64,28 +70,42 @@
                 <ul>
                     <li><a href="#home">Início</a></li>
                     <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#complaints">Sua vida</a></li>
                     <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#session-types">Sessões</a></li>
+                    <li><a href="#FAQSection">Perguntas</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
+            <!-- Fim do Menu Navbar -->
         </header>
+        <div id="home" class="firstPart">
+            <section class="hero">
+                <div class="left-banner">
+                    <h1>
+                        Psicanalista <br />
+                        <span>Anabel Vaz</span>
+                    </h1>
+                    <blockquote>
+                        "Sabe aquela sensação de que algumas dores não têm nome,
+                        ou de que você repete padrões que não consegue entender?
+                        Você não está sozinho(a). Muitas vezes, carregamos pesos
+                        que nem sabemos como colocar no chão — e está tudo bem
+                        em pedir ajuda para aliviá-los."
+                    </blockquote>
+                    <a
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5521984084461&text=Ol%C3%A1%2C%20tenho%20interesse%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21"
+                        class="btn"
+                        >Fale comigo</a
+                    >
+                </div>
+                <div class="right-banner">
+                    <img src="images/rosto-banner-foto-atual.webp" alt="" />
+                </div>
+            </section>
+        </div>
 
-        <section id="home" class="banner">
-            <div class="banner-image"></div>
-
-            <div class="banner-content">
-                <h1>Psicanalista Anabel Vaz</h1>
-                <p>Atendimentos no Rio de Janeiro, Niterói e Online</p>
-                <a
-                    target="_blank"
-                    href=" https://api.whatsapp.com/send?phone=5521984084461&text=Ol%C3%A1%2C%20tenho%20interesse%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21
-"
-                    class="btn"
-                    >Agende sua Consulta</a
-                >
-            </div>
-        </section>
+        <!-- Botão do wpp flutuante -->
         <div id="wpp-btn">
             <a
                 target="_blank"
@@ -94,31 +114,179 @@
                 ><img src="images/wpp-logo.png" alt=""
             /></a>
         </div>
+        <!-- fim do Botão do wpp flutuante -->
 
+        <!-- Área de Benefícios da Terapia -->
+
+        <section class="carousel-section" >
+        <h2 class="carousel-title">Como a terapia <span>pode melhorar</span> a sua vida:</h2>
+
+        <div class="carousel-container">
+	<button class="nav-arrow left">‹</button>
+	<div class="carousel-track">
+		<div class="card" data-index="0">
+		<div  >
+		<div class="cardTitle">
+                    <h3>Se entender melhor</h3>
+                    <img src="images/people-search-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="carouselPs">
+                    <p>
+                        <img src="images/seta.svg" alt="" />
+
+                        Descobrir padrões que se repetem na sua vida (e como
+                        mudá-los)
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" />
+
+                        Entender o porquê de certos medos, angústias ou
+                        bloqueios
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Aprender a nomear
+                        emoções que antes pareciam confusas
+                    </p>
+                   </div>
+                </div>
+		</div>
+		<div class="card" data-index="1">
+		<div >
+		<div class="cardTitle">
+                    <h3>Recuperar o poder de escolha</h3>
+                    <img src="images/choice-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="carouselPs">
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Tomar decisões sem
+                        tanto sofrimento
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Deixar de agir no
+                        piloto automático (e viver com mais intenção)
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Parar de sabotar
+                        seus próprios sonhos
+                    </p>
+                    </div>
+                </div>
+		</div>
+		<div class="card" data-index="2">
+		<div >
+		<div class="cardTitle">
+                    <h3>Lidar com o peso emocional</h3>
+                    <img src="images/emotions-sad-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="carouselPs">
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Reduzir ansiedade,
+                        estresse e sintomas depressivos
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Lidar melhor com
+                        traumas ou perdas
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Diminuir a
+                        autocrítica excessiva
+                    </p>
+                    </div>
+                </div>
+		</div>
+		<div class="card" data-index="3">
+		<div>
+  <div class="cardTitle">
+                    <h3>Melhora em relacionamentos</h3>
+                    <img src="images/relationship-counseling-marriage-counseling-couples-therapy-marriage-therapy-svgrepo-com.svg" alt="">
+  </div>
+                    <div class="carouselPs">
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Aprender a colocar
+                        limites com amor
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Quebrar ciclos de
+                        dependência emocional
+                    </p>
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Se comunicar com
+                        mais clareza e menos culpa
+                    </p>
+                    </div>
+                </div>
+		</div>
+		<div class="card" data-index="4">
+		<div>
+		<div class="cardTitle">
+                    <h3>Reconexão com sua força</h3>
+                    <img src="images/arm-muscles-silhouette-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="carouselPs">
+                    <p>
+                        <img src="images/seta.svg" alt="" />
+                        Descobrir recursos internos que você nem sabia que tinha
+                    </p>
+
+                    <p>
+                        <img src="images/seta.svg" alt="" /> Resgatar sua
+                        capacidade de sentir alegria genuína
+                    </p>
+
+                    <p>
+                        <img src="images/seta.svg" alt="" />
+                        Criar ferramentas para enfrentar desafios com mais
+                        segurança
+                    </p>
+                    </div>
+                </div>
+		</div>
+		<!-- <div class="card" data-index="5">
+			<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 6">
+		</div> -->
+	</div>
+	<button class="nav-arrow right">›</button>
+        </div>
+
+        <!-- <div class="member-info">
+	<h2 class="member-name">David Kim</h2>
+	<p class="member-role">Founder</p>
+        </div> -->
+
+        <div class="dots">
+	<div class="dot active" data-index="0"></div>
+	<div class="dot" data-index="1"></div>
+	<div class="dot" data-index="2"></div>
+	<div class="dot" data-index="3"></div>
+	<div class="dot" data-index="4"></div>
+        </div>
+</section>
         <section id="about" class="about-section">
             <div class="container">
                 <div class="about-content">
                     <div class="about-text">
                         <h2>Sobre mim</h2>
                         <p>
-                            Olá, muito prazer! Meu nome é Anabel, sou
-                            psicanalista, terapeuta energética e instrutora de
-                            yoga.
+                            A terapia é indicada para todas as pessoas que
+                            buscam equilíbrio emocional e não apenas para quem
+                            sofre algum tipo de transtorno mental.
                         </p>
                         <p>
-                            A terapia energética se propõe a conduzir a pessoa a
-                            um estado pleno de saúde, através da utilização de
-                            diversas técnicas que se complementam, como florais,
-                            vivências, exercícios respiratórios e corporais,
-                            reiki e auriculoterapia.
+                            É comum as pessoas procurarem ajuda terapêutica
+                            apenas quando ultrapassam seus limites e já estão
+                            bem adoecidas. Mas seria muito melhor se buscassem
+                            um acompanhamento logo que percebessem uma tristeza
+                            ou angústia contínua ou dificuldade de lidar sozinho
+                            com suas questões emocionais.
                         </p>
                         <p>
-                            Esse trabalho terapêutico tem auxiliado a
-                            restabelecer o equilíbrio emocional, físico e mental
-                            em pessoas com quadros de depressão, ansiedade,
-                            fobias, síndrome do pânico, insônia ou que
-                            simplesmente busquem uma vida mais saudável e
-                            equilibrada.
+                            A terapia ajuda a entrar em contato direto com a
+                            causa das questões que trazem incômodos,
+                            proporcionando assim vários benefícios como
+                            equilíbrio emocional, identificação de suas dores e
+                            angústias, diminuição da ansiedade e agressividade,
+                            melhoria da autoestima, relações mais saudáveis e
+                            entre outros.
                         </p>
 
                         <p>
@@ -137,17 +305,118 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <img
-                            src="images/profile.webp"
-                            alt="Dra. Psicanalista"
-                        />
+                        <iframe
+                            id="aboutVideo"
+                            width="511"
+                            height="700"
+                            src="https://www.youtube.com/embed/gbf27vaAxQc"
+                            title="Anabel Vaz Psicanalista - Quem sou eu?"
+                            frameborder="0"
+                            <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="complaints" >
+
+                <h2>Alguma dessas questões afetam <span>sua vida</span>?</h2>
+                <div class="complaintsGroup">
+                    <div class="theComplaint">
+                        <img src="images/illness-in-old-age-lonely-old-age-alone-svgrepo-com.svg" alt="">
+                    <h3>A Solidão</h3>
+                    <p>
+                        Você pode estar cercado de pessoas e ainda assim sentir
+                        um vazio que não se explica. A terapia não vai
+                        magicamente preencher esse espaço, mas pode te ajudar a
+                        entender por que ele existe — e como reconectar-se com o
+                        mundo sem medo de ser decepcionado. O isolamento muitas
+                        vezes é uma proteção, mas também pode ser uma prisão que
+                        você já tem a chave para abrir.
+                    </p>
+                </div>
+                <div class="theComplaint">
+                    <img src="images/question-mark-svgrepo-com.svg" alt="">
+                    <h3>O Medo de Não Ser "O Suficiente"</h3>
+                    <p>
+                        A cobrança por perfeição é uma tortura silenciosa. Na terapia, você descobre que vulnerabilidade não é fracasso, é o que torna seus acertos verdadeiramente seus. É bom lembrar de dar um passo de casa vez e fazer o que é possível para o dia de hoje. E aceitar que você fez o seu melhor.
+                    </p>
+                </div>
+                <div class="theComplaint">
+                    <img src="images/anxiety-svgrepo-com.svg" alt="">
+                    <h3>A Ansiedade</h3>
+
+                    <p>
+                        A ansiedade é como um alarme interno que toca sem perigo
+                        real. Coração acelerado, pensamentos em looping e aquele
+                        frio na barriga que paralisa. Não é fraqueza, é o
+                        cérebro tentando te proteger de ameaças que ainda nem
+                        existem.
+                    </p>
+                </div>
+                <div class="theComplaint">
+                    <img src="images/sad-svgrepo-com.svg" alt="">
+                    <h3>A Depressão</h3>
+                    <p>
+                        Acordar cansado antes mesmo do dia começar. Fingir
+                        normalidade enquanto por dentro nada parece fazer
+                        sentido. Na terapia, você não precisa performar saúde,
+                        pode trazer essa dor sem máscaras. O caminho não é
+                        linear, mas cada pequeno passo no escuro é um ato de
+                        coragem que a depressão não te deixa enxergar.
+                    </p>
+                </div>
+                <div class="theComplaint">
+                    <img src="images/arson-property-crime-fire-damage-svgrepo-com.svg" alt="">
+                    <h3>A Autossabotagem</h3>
+                    <p>
+                        Você se pega repetindo padrões que prometeu não repetir,
+                        como se algo invisível puxasse você para trás sempre que
+                        o crescimento dói. A terapia te ajuda a enxergar essas
+                        armadilhas internas, mostrando que você não é seu pior
+                        inimigo, apenas alguém que aprendeu formas dolorosas de
+                        se proteger.
+                    </p>
+                </div>
+                <div class="theComplaint">
+                    <img src="images/sadness-svgrepo-com.svg" alt="">
+                    <h3>O Luto Que Não Sabe Como Passar</h3>
+                    <p>
+                        Algumas perdas não são só mortes: são finais de
+                        relacionamentos, identidades que não servem mais,
+                        futuros que desmoronaram. A terapia oferece um lugar
+                        para esse luto respirar, sem pressa, porque algumas
+                        feridas precisam ser reconhecidas antes de cicatrizarem.
+                    </p>
+                </div>
+            </div>
+                <div class="conclusionComplaint">
+                    <h3>Cada Uma Dessas Dores Merece Ser Ouvida, Não Julgada</h3>
+                    <p>
+                        Esses sintomas não são defeitos; são sinais de que algo
+                        dentro de você está pedindo atenção. A mudança começa quando
+                        paramos de lutar contra nós mesmos e começamos a nos escutar
+                        com a mesma paciência que ofereceríamos a um amigo querido.
+                        A terapia é esse lugar de reconstrução: tijolo por tijolo,
+                        insight por insight. Você não precisa estar "pronta" para
+                        começar — só precisa estar disposta a dar o primeiro
+                        passo em direção a uma versão mais gentil de si mesma.
+                    </p>
+                    <a
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5521984084461&text=Ol%C3%A1%2C%20tenho%20interesse%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21"
+                        class="btn"
+                        >Fale comigo</a
+                    >
+                </div>
+
+        </section>
+
         <section id="testimonials" class="testimonials-section">
-            <div class="container">
+            <div class="container testimonials-area">
                 <h2>Depoimentos de Pacientes</h2>
                 <div class="testimonials-container">
                     <div class="testimonial active">
@@ -183,6 +452,109 @@
             </div>
         </section>
 
+        <section id="FAQSection">
+            <h2>Perguntas Frequentes:</h2>
+            <ul id="theFAQ">
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>Quais formas de pagamento são aceitas?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>A forma de pagamento para os atendimentos é através do PIX.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>As sessões duram quanto tempo?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>A sessão tem duração estimada de 50 minutos, e recomendo que sejam realizadas semanalmente, ao menos no primeiro mês.
+                        Conforme formos observando a melhora dos sintomas e desconfortos, podemos espaçar cada vez mais. </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>Sessões online são tão efetivas quanto presenciais?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Assim como uma videchamada pode transmitir emoções reais, a terapia online mantém sua essência: é a mesma escuta profissional, só que através da tela. O vínculo terapêutico se constrói na qualidade do diálogo, não no meio físico.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>Aceita plano de saúde?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Não atendo por convênios</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>Onde você atende?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Atendo em Niterói, Copacabana e online</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>O que é Psicanálise?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>A psicanálise é um método criado por Sigmund Freud que busca entender como nossas emoções, pensamentos e comportamentos são influenciados por experiências passadas — muitas vezes, por coisas que nem percebemos conscientemente.
+                        Ela parte da ideia de que nossos conflitos internos, medos e desejos podem ficar "guardados" no inconsciente, afetando nossa vida sem que a gente perceba.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>Como Funciona?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Em vez de focar apenas nos sintomas (como ansiedade ou depressão), a psicanálise explora as raízes mais profundas desses sentimentos. O psicanalista ajuda o paciente a: </br>
+                        - Entender padrões repetitivos </br>
+                         - Lidar com traumas ou memórias que ainda causam dor.</br>
+                         - Liberar emoções que foram reprimidas ao longo da vida.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>"Mas é só falar sobre a infância?"</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Não só, mas a infância tem um papel importante porque é quando formamos nossas primeiras referências emocionais. Muitas das nossas reações hoje podem estar ligadas a experiências antigas que ainda ecoam dentro de nós.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>E a diferença para outras terapias?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Enquanto algumas abordagens focam em soluções rápidas (como técnicas para reduzir a ansiedade no momento), a psicanálise investiga o "porquê" por trás desses sentimentos. É um processo mais profundo, que exige tempo e autoconhecimento.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+
+                        <h3><span class="arrow"></span>Pra quem é indicada?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Para quem quer se entender melhor, resolver conflitos internos ou simplesmente explorar seu mundo emocional com mais liberdade. Não é sobre "ficar bom rápido", mas sobre se reconectar consigo mesmo.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
         <section id="session-types">
             <div class="container">
                 <h2>Atendimentos Psicanálise</h2>
@@ -207,12 +579,13 @@
                         <p>Niterói ou Rio de Janeiro</p>
                     </div>
                 </a>
+
             </div>
         </section>
 
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2>Entre em Contato</h2>
+                <h2><span>Entre em Contato</span></h2>
                 <div class="contact-organize">
                     <div class="contact-content">
                         <div class="contact-info">
@@ -220,7 +593,7 @@
                             <p><strong>Whatsapp:</strong> (21) 98408-4461</p>
                             <p>
                                 <strong>Atendimentos:</strong> Rio de Janeiro e
-                                Niterói, 9h - 18h
+                                Niterói
                             </p>
                         </div>
                     </div>
@@ -249,5 +622,8 @@
         </footer>
 
         <script src="script.js"></script>
+        <script src="./component/carousel-wrapper.js"></script>
+
+
     </body>
 </html>
