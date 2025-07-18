@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Google Tag Manager -->
-        <script>
+        <script defer>
             (function (w, d, s, l, i) {
                 w[l] = w[l] || [];
                 w[l].push({
@@ -22,7 +22,9 @@
         <!-- End Google Tag Manager -->
         <title>Psicanálise - Atendimentos no Rio, Niterói e Online</title>
         <link rel="icon" href="images/icons8-therapy-64.png" />
+
         <style>
+
         .firstPart {
             overflow: hidden;
             display: flex;
@@ -113,12 +115,15 @@
             }
             .firstPart .hero {
                 grid-template-rows: 6fr 1fr 6fr;
+                height: 50%;
             }
             .left-banner {
                 grid-area: 1 / 1 / 3 / 4;
+
             }
             .right-banner {
                 grid-area: 2 / 1 / 4 / 4;
+                /* display: none; */
             }
         }
 
@@ -132,8 +137,13 @@
         }
 
         </style>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="./component/carousel.css">
+        <link rel="stylesheet"  href="style.css"  />
+        <link rel="stylesheet"  href="./component/carousel.css"  />
+        <link rel="stylesheet"  href="./yt/lite-yt-embed.css" />
+        <!-- <link rel="preconnect" href="https://www.googletagmanager.com">
+        <link rel="preconnect" href="https://i.ytimg.com">
+        <link rel="preconnect" href="https://www.google.com">
+        <link rel="preconnect" href="https://googleads.g.doubleclick.net"> -->
 
 
 
@@ -146,6 +156,7 @@
                 height="0"
                 width="0"
                 style="display: none; visibility: hidden"
+
             ></iframe
         ></noscript>
         <!-- End Google Tag Manager (noscript) -->
@@ -201,8 +212,9 @@
         <div id="wpp-btn">
             <a
                 target="_blank"
-                href=" https://api.whatsapp.com/send?phone=5521984084461&text=Ol%C3%A1%2C%20tenho%20interesse%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21
-"
+                href=" https://api.whatsapp.com/send?phone=5521984084461&text=Ol%C3%A1%2C%20tenho%20interesse%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%21"
+                aria-label="Botão do Whatsapp"
+                aria-label="Botão do Whatsapp"
                 ><img loading="lazy" src="images/wpp-btn-img.webp" alt=""
             /></a>
         </div>
@@ -214,7 +226,7 @@
         <h2 class="carousel-title">Como a terapia <span>pode melhorar</span> a sua vida:</h2>
 
         <div class="carousel-container">
-	<button class="nav-arrow left">‹</button>
+	<button class="nav-arrow left" aria-label="Seta para esquerda" title="Seta para esquerda">‹</button>
 	<div class="carousel-track">
 		<div class="card" data-index="0">
 		<div  >
@@ -337,7 +349,7 @@
 			<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 6">
 		</div> -->
 	</div>
-	<button class="nav-arrow right">›</button>
+	<button class="nav-arrow right" aria-label="Seta para direita" title="Seta para direita" >›</button>
         </div>
 
         <!-- <div class="member-info">
@@ -397,18 +409,13 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <iframe
-                            id="aboutVideo"
-                            loading="lazy"
-                            width="511"
-                            height="700"
-                            src="https://www.youtube.com/embed/gbf27vaAxQc"
-                            title="Anabel Vaz Psicanalista - Quem sou eu?"
-                            frameborder="0"
-                            <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                        ></iframe>
+
+                        <lite-youtube videoid="gbf27vaAxQc" style="background-image: url('./images/photo-yt-thumb.webp');">
+                          <a href="https://youtube.com/watch?v=gbf27vaAxQc" class="lyt-playbtn" title="Play Video">
+                            <span class="lyt-visually-hidden">Play Video: Quem sou eu? - Anabel Vaz</span>
+                          </a>
+                        </lite-youtube>
+
                     </div>
                 </div>
             </div>
@@ -538,9 +545,9 @@
                     </div>
                 </div>
                 <div class="testimonial-nav">
-                    <button class="nav-dot active" data-index="0"></button>
-                    <button class="nav-dot" data-index="1"></button>
-                    <button class="nav-dot" data-index="2"></button>
+                    <button class="nav-dot active" data-index="0" aria-label="Slide número 1" title="Slide número 1"></button>
+                    <button class="nav-dot" data-index="1" aria-label="Slide número 2" title="Slide número 2"></button>
+                    <button class="nav-dot" data-index="2" aria-label="Slide número 3" title="Slide número 3"></button>
                 </div>
             </div>
         </section>
@@ -714,8 +721,10 @@
             </div>
         </footer>
 
-        <script src="script.js"></script>
-        <script src="./component/carousel-wrapper.js"></script>
+        <script src="script.js" defer></script>
+        <script src="./component/carousel-wrapper.js" defer></script>
+        <script src="./yt/lite-yt-embed.js" defer></script>
+
 
 
     </body>
