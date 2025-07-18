@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Arvo";
+    font-display: auto;
+    src:
+        local("Arvo"),
+        url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2)
+            format("woff2");
+}
+
 h1 {
     font-size: 1.7em;
 }
@@ -253,10 +262,15 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+lite-youtube {
+    height: 700px;
+    width: 511px;
+}
+
 @media (max-width: 768px) {
-    #aboutVideo {
-        width: 400px;
+    lite-youtube {
         height: 600px;
+        width: 350px;
     }
 }
 
